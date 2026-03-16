@@ -114,7 +114,7 @@ def _add_decode_error_note(file: Path, e: tomlkit.exceptions.ParseError) -> None
     # Lines are 1-indexed and columns are 0-indexed
     e.add_note(
         textwrap.dedent(
-            f"""
+            f""" 
                 Error reading configuration at {str(file)!r}: {e}
                 File {str(file)!r}, line {e.line}:
                 {file.read_text().splitlines()[e.line - 1]}
