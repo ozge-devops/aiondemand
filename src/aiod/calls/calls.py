@@ -557,7 +557,7 @@ async def _fetch_resources(urls) -> list[dict]:
         response_data = await asyncio.gather(*tasks)
     return response_data
 
-
+ 
 wrap_common_calls = partial(
     wrap_calls,
     calls=[
