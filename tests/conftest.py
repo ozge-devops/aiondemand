@@ -51,7 +51,7 @@ def mocked_keycloak_server():
                     "expires_in": 30,
                 }
                 return HTTPStatus.OK, {}, json.dumps(body)
-            case unknown:
+            case unknown: 
                 raise RuntimeError(f"Unknown request payload: {unknown}")
 
     responses.add_callback(
