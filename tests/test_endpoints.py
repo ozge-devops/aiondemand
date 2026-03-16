@@ -371,7 +371,7 @@ def test_industrial_sector_taxonomy():
     car_industry = Term(
         term="Car Industry", taxonomy="industrial sectors", definition="", subterms=[]
     )
-    assert industrial_sectors[0].term == "Manufacturing"
+    assert industrial_sectors[0].term == "Manufacturing" 
     assert car_industry in industrial_sectors[0].subterms
     assert len(industrial_sectors) == 21
 
