@@ -177,7 +177,7 @@ def test_token_to_file_creates_parent_directory(tmp_path):
 
     token = Token(refresh_token="abc")
     token.to_file(token_file)
-    assert token_file.parent.exists() and token_file.parent.is_dir()
+    assert token_file.parent.exists() and token_file.parent.is_dir() 
     assert token_file.exists() and token_file.is_file()
 
     # Calling it multiple times should not result in an error,
